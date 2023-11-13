@@ -1,0 +1,114 @@
+{
+  "casos": [
+    {
+      "caso": 1,
+      "operacoes": [
+        {"operation": "buy", "unit-cost": 10.00, "quantity": 100},
+        {"operation": "sell", "unit-cost": 15.00, "quantity": 50},
+        {"operation": "sell", "unit-cost": 15.00, "quantity": 50}
+      ],
+      "expected_output": [
+        {"tax": 0}
+      ]
+    },
+    {
+      "caso": 2,
+      "operacoes": [
+        {"operation": "buy", "unit-cost": 10.00, "quantity": 10000},
+        {"operation": "sell", "unit-cost": 20.00, "quantity": 5000},
+        {"operation": "sell", "unit-cost": 5.00, "quantity": 5000}
+      ],
+      "expected_output": [
+        {"tax": 0.00},
+        {"tax": 10000.00},
+        {"tax": 0.00}
+      ]
+    },
+    {
+      "caso": 3,
+      "operacoes": [
+        {"operation": "buy", "unit-cost": 10.00, "quantity": 10000},
+        {"operation": "sell", "unit-cost": 5.00, "quantity": 5000},
+        {"operation": "sell", "unit-cost": 20.00, "quantity": 3000}
+      ],
+      "expected_output": [
+        {"tax": 0.00},
+        {"tax": 0.00},
+        {"tax": 1000.00}
+      ]
+    },
+    {
+      "caso": 4,
+      "operacoes": [
+        {"operation": "buy", "unit-cost": 10.00, "quantity": 10000},
+        {"operation": "buy", "unit-cost": 25.00, "quantity": 5000},
+        {"operation": "sell", "unit-cost": 15.00, "quantity": 10000},
+        {"operation": "sell", "unit-cost": 25.00, "quantity": 5000}
+      ],
+      "expected_output": [
+        {"tax": 0.00},
+        {"tax": 0.00},
+        {"tax": 0.00},
+        {"tax": 10000.00}
+      ]
+    },
+    {
+      "caso": 5,
+      "operacoes": [
+        {"operation": "buy", "unit-cost": 10.00, "quantity": 10000},
+        {"operation": "buy", "unit-cost": 25.00, "quantity": 5000},
+        {"operation": "sell", "unit-cost": 15.00, "quantity": 10000},
+        {"operation": "sell", "unit-cost": 25.00, "quantity": 5000}
+      ],
+      "expected_output": [
+        {"tax": 0.00},
+        {"tax": 0.00},
+        {"tax": 0.00},
+        {"tax": 10000.00}
+      ]
+    },
+    {
+      "caso": 6,
+      "operacoes": [
+        {"operation": "buy", "unit-cost": 10.00, "quantity": 10000},
+        {"operation": "sell", "unit-cost": 2.00, "quantity": 5000},
+        {"operation": "sell", "unit-cost": 20.00, "quantity": 2000},
+        {"operation": "sell", "unit-cost": 20.00, "quantity": 2000},
+        {"operation": "sell", "unit-cost": 25.00, "quantity": 1000}
+      ],
+      "expected_output": [
+        {"tax": 0.00},
+        {"tax": 0.00},
+        {"tax": 0.00},
+        {"tax": 0.00},
+        {"tax": 3000.00}
+      ]
+    },
+    {
+      "caso": 7,
+      "operacoes": [
+        {"operation": "buy", "unit-cost": 10.00, "quantity": 10000},
+        {"operation": "sell", "unit-cost": 2.00, "quantity": 5000},
+        {"operation": "sell", "unit-cost": 20.00, "quantity": 2000},
+        {"operation": "sell", "unit-cost": 20.00, "quantity": 2000},
+        {"operation": "sell", "unit-cost": 20.00, "quantity": 2000}
+      ],
+      "expected_output": []
+    },
+    {
+      "caso": 8,
+      "operacoes": [
+        {"operation": "buy", "unit-cost": 10.00, "quantity": 10000},
+        {"operation": "sell", "unit-cost": 50.00, "quantity": 10000},
+        {"operation": "buy", "unit-cost": 20.00, "quantity": 10000},
+        {"operation": "sell", "unit-cost": 50.00, "quantity": 10000}
+      ],
+      "expected_output": [
+        {"tax": 0.00},
+        {"tax": 80000.00},
+        {"tax": 0.00},
+        {"tax": 60000.00}
+      ]
+    }
+  ]
+}
