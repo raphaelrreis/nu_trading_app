@@ -203,4 +203,4 @@ As operações de venda neste caso resultam em um lucro elevado, com o imposto s
   [{"tax": 0.00}, {"tax": 80000.00}, {"tax": 0.00}, {"tax": 60000.00}]
 
 ## Conclusão
-Este projeto é uma representação da minha dedicação em construir o desafio para uma Calculadora de Ganho de Capital.
+Este projeto é uma representação da minha dedicação em construir o desafio para uma Calculadora de Ganho de Capital para processo Software Engineer at NuBank.
